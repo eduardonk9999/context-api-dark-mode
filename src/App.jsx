@@ -11,13 +11,13 @@ import { DarkProvider, useDarkContext} from "./Context/DarkContex";
 function App() {
   
   return (
-    <DarkProvider>
+    <DarkProvider >
         <Header />
         <Card imgCapa={foodImg1} title={'Lunch'} />
         <Card imgCapa={foodImg2} title={'Drink'} />
         <Card imgCapa={foodImg3} title={'Salad'} />
         <Card imgCapa={foodImg4} title={'Meat'} />
-        <GlobalStyle  />
+       
     </DarkProvider>
   )
 }

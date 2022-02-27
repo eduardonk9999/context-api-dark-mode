@@ -1,11 +1,11 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 const lightTheme = {
   background: "#fff",
   color: "#000"
 }
 
 const darkTheme = {
-  background: "#000",
+  background: "#111d34",
   color: "#fff"
 }
 

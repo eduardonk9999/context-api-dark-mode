@@ -1,14 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
-export const lightTheme = {
+const lightTheme = {
   background: "#fff",
-  color: "#000"
+  color: "#070616"
 }
 
-export const darkTheme = {
-  background: "#000",
+const darkTheme = {
+  background: "#070616",
   color: "#fff"
 }
+
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -21,7 +22,13 @@ export const GlobalStyle = createGlobalStyle`
   body{
     font-family: 'Roboto', sans-serif;
 
-    background: #d9d9d9;
+    background: ${props => {
+      if(props.className === 'lightTheme'){
+        return lightTheme.background
+      } else {
+        return darkTheme.background
+      }
+    }};
   }
   max-width: 400px;
   
